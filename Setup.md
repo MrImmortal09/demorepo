@@ -8,9 +8,9 @@ Before proceeding with any setup, you need to configure environment variables.
 ### 1.Adding environment variables to .env:
 - We provide a .env.example file that demonstrates how the environment is set up.
 - Create a .env file by copying the .env.example:
-'''sh
+```sh
 cp .env.example .env
-'''
+```
 - Modify the .env file as per your local setup.
 
 ## Step 2: Choose Your Setup Method (Docker Recommended)
@@ -91,9 +91,9 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 **Note:** In case you encounter an error with vagrant's vbguest module, run `vagrant plugin install vagrant-vbguest`
 from the host machine.
 
-## Setting Up Development Server using Python Virtual Environment
+### Setting Up Development Server using Python Virtual Environment
 
-### Setup Correct python version
+#### Setup Correct python version
 
 Current supported python version is `3.11.2`. It can be installed using any tool of choice like `asdf`, `pyenv`, `hatch`.
 For this guide, we are using `pyenv`. Install pyenv by following instructions in its [Github Repo](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation)
@@ -105,7 +105,7 @@ pyenv install 3.11.2
 
 Note: Project root folder already contains `.python-version`, so pyenv can recognize the local version to use for the current project.
 
-### Setup Virtual environment using poetry
+#### Setup Virtual environment using poetry
 
 Ensure that `python -V` returns the correct python version for the project
 
@@ -145,11 +145,11 @@ python manage.py collectstatic
 python manage.py runserver
 ```
 
-### Ready to go now
+#### Ready to go now
 
 Then go to `http://127.0.0.1:8000/admin/socialaccount/socialapp/` and add filler information for social auth accounts.
 Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.org'.
 
-### Visit `http://localhost:8000`
+#### Visit `http://localhost:8000`
 
 **Note:** In case you encounter an error, run `sudo apt-get install libpq-dev`.
