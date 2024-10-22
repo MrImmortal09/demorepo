@@ -1,8 +1,8 @@
-# Setting up Development Server
+# Setting up development Server
 
 - [Video on How to setup Project BLT](https://www.youtube.com/watch?v=IYBRVRfPCK8)
 
-## Step 1: Add Environment Variables
+## Step 1: Add environment variables
 Before proceeding with any setup, you need to configure environment variables.
 
 ### 1.Adding environment variables to .env:
@@ -16,10 +16,10 @@ cp .env.example .env
 ```
 - Modify the .env file as per your local setup.
 
-## Step 2: Choose Your Setup Method (Docker Recommended)
-### 1.Recommended Method: Setting UpDevelopment Server using Docker-compose
+## Step 2: Choose your setup method (Docker recommended)
+### 1.Recommended method: setting Up development server using docker-compose
 
-- Install Docker
+- Install docker
 
 
 ```sh
@@ -47,11 +47,11 @@ cp .env.example .env
 
 ```
 
-### 2.Setting Up Development Server using Vagrant
+### 2.Setting Up development server using vagrant
 
--Install [Vagrant](https://www.vagrantup.com/)
+-Install [vagrant](https://www.vagrantup.com/)
 
--Get [Virtualbox](https://www.virtualbox.org/)
+-Get [virtualbox](https://www.virtualbox.org/)
 
 #### Follow the given commands
 
@@ -89,9 +89,9 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 **Note:** In case you encounter an error with vagrant's vbguest module, run `vagrant plugin install vagrant-vbguest`
 from the host machine.
 
-### 3.Setting Up Development Server using Python Virtual Environment
+### 3.Setting up development Server using python virtual environment
 
-#### Setup Correct python version
+#### Setup correct python version
 
 Current supported python version is `3.11.2`. It can be installed using any tool of choice like `asdf`, `pyenv`, `hatch`.
 For this guide, we are using `pyenv`. Install pyenv by following instructions in its [Github Repo](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation)
@@ -103,7 +103,7 @@ pyenv install 3.11.2
 
 Note: Project root folder already contains `.python-version`, so pyenv can recognize the local version to use for the current project.
 
-#### Setup Virtual environment using poetry
+#### Setup virtual environment using poetry
 
 Ensure that `python -V` returns the correct python version for the project
 
@@ -152,10 +152,10 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 
 **Note:** In case you encounter an error, run `sudo apt-get install libpq-dev`.
 
-# Troubleshooting
+## Troubleshooting
 If you run into issues during the setup, here are some common solutions:
 
-## 1.Cannot Install nltk, distlib, certifi 
+### 1.Cannot install nltk, distlib, certifi 
 The error message you're encountering suggests that the package manager (likely poetry) is unable to find installation candidates.
 Below are the temporary solutions.
 
@@ -167,5 +167,5 @@ docker-compose build --no-cache
 ```
 Feel free to contribute by solving this [issue](https://github.com/OWASP-BLT/BLT/issues/2659).
 
-## Need More Help?
+## Need more help?
 If you're still facing issues or need further assistance, feel free to reach out to the community on the [OWASP Slack channel](https://owasp.org/slack/invite).
