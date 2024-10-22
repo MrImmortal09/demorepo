@@ -81,12 +81,12 @@ cp .env.example .env
  python manage.py runserver
 ```
 
-### Ready to go
+#### Ready to go
 
 Then go to `http://127.0.0.1:8000/admin/socialaccount/socialapp/` and add filler information for social auth accounts.
 Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.org'.
 
-### Voila go visit `http://localhost:8000`
+#### Voila go visit `http://localhost:8000`
 
 **Note:** In case you encounter an error with vagrant's vbguest module, run `vagrant plugin install vagrant-vbguest`
 from the host machine.
@@ -153,3 +153,16 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 #### Visit `http://localhost:8000`
 
 **Note:** In case you encounter an error, run `sudo apt-get install libpq-dev`.
+
+# Troubleshooting
+If you run into issues during the setup, here are some common solutions:
+
+## 1. 1. Cannot Install nltk, distlib, certifi 
+
+```sh
+poetry cache clear --all pypi
+docker-compose build --no-cache
+```
+
+## Need More Help?
+If you're still facing issues or need further assistance, feel free to reach out to the community on the [OWASP Slack channel](https://owasp.org/slack/invite).
