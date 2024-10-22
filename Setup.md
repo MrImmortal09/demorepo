@@ -7,7 +7,7 @@ Before proceeding with any setup, you need to configure environment variables.
 
 ### 1.Adding environment variables to .env:
 - We provide a .env.example file that demonstrates how the environment is set up.
-- Create a .env file by copying the .env.example:
+
 ```sh
 # --- Move to project directory ---
 cd BLT
