@@ -156,11 +156,16 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 If you run into issues during the setup, here are some common solutions:
 
 ## 1. 1. Cannot Install nltk, distlib, certifi 
+The error message you're encountering suggests that the package manager (likely poetry) is unable to find installation candidates.
+Below are the temporary solutions.
 
 ```sh
 poetry cache clear --all pypi
-docker-compose build --no-cache
+
+#For Docker method only
+docker-compose build --no-cache 
 ```
+Feel free to contribute by solving this [issue](https://github.com/OWASP-BLT/BLT/issues/2659).
 
 ## Need More Help?
 If you're still facing issues or need further assistance, feel free to reach out to the community on the [OWASP Slack channel](https://owasp.org/slack/invite).
