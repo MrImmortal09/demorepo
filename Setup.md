@@ -14,7 +14,7 @@ cp .env.example .env
 - Modify the .env file as per your local setup.
 
 ## Step 2: Choose Your Setup Method (Docker Recommended)
-### Recommended Method: Setting UpDevelopment Server using Docker-compose
+### 1.Recommended Method: Setting UpDevelopment Server using Docker-compose
 
 - Install Docker
 
@@ -47,7 +47,7 @@ cp .env.example .env
 
 ```
 
-### Setting Up Development Server using Vagrant
+### 2.Setting Up Development Server using Vagrant
 
 -Install [Vagrant](https://www.vagrantup.com/)
 
@@ -91,7 +91,7 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 **Note:** In case you encounter an error with vagrant's vbguest module, run `vagrant plugin install vagrant-vbguest`
 from the host machine.
 
-### Setting Up Development Server using Python Virtual Environment
+### 3.Setting Up Development Server using Python Virtual Environment
 
 #### Setup Correct python version
 
