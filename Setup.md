@@ -1,4 +1,4 @@
-# Setting up development Server
+# Setting up development server
 
 - [Video on How to setup Project BLT](https://www.youtube.com/watch?v=IYBRVRfPCK8)
 
@@ -17,7 +17,7 @@ cp .env.example .env
 - Modify the .env file as per your local setup.
 
 ## Step 2: Choose your setup method (Docker recommended)
-### 1.Recommended method: setting Up development server using docker-compose
+### 1.Recommended method: Setting up development server using docker-compose
 
 - Install docker
 
@@ -89,7 +89,7 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 **Note:** In case you encounter an error with vagrant's vbguest module, run `vagrant plugin install vagrant-vbguest`
 from the host machine.
 
-### 3.Setting up development Server using python virtual environment
+### 3.Setting up development server using python virtual environment
 
 #### Setup correct python version
 
