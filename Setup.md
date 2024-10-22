@@ -1,4 +1,4 @@
-# Setting up development server
+# Setting Up Development Server
 
 - [Video on How to setup Project BLT](https://www.youtube.com/watch?v=IYBRVRfPCK8)
 
@@ -47,7 +47,7 @@ cp .env.example .env
 
 ```
 
-### 2.Setting Up development server using vagrant
+### 2.Setting up development server using vagrant
 
 -Install [vagrant](https://www.vagrantup.com/)
 
