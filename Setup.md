@@ -155,7 +155,7 @@ Add a Domain `http://127.0.0.1:8000/admin/website/domain/` with the name 'owasp.
 # Troubleshooting
 If you run into issues during the setup, here are some common solutions:
 
-## 1. 1. Cannot Install nltk, distlib, certifi 
+## 1.Cannot Install nltk, distlib, certifi 
 The error message you're encountering suggests that the package manager (likely poetry) is unable to find installation candidates.
 Below are the temporary solutions.
 
