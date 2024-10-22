@@ -9,6 +9,9 @@ Before proceeding with any setup, you need to configure environment variables.
 - We provide a .env.example file that demonstrates how the environment is set up.
 - Create a .env file by copying the .env.example:
 ```sh
+# --- Move to project directory ---
+cd BLT
+
 cp .env.example .env
 ```
 - Modify the .env file as per your local setup.
@@ -20,9 +23,6 @@ cp .env.example .env
 
 
 ```sh
- # --- Move to project directory ---
- cd BLT
-
  # --- build the docker container ---
  docker-compose build
 
@@ -56,8 +56,6 @@ cp .env.example .env
 #### Follow the given commands
 
 ```sh
- # Move to project directory
- cd BLT
 
  # Start vagrant - It takes time during the first run, so go get a coffee!
  vagrant up
